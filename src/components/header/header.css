@@ -1,0 +1,238 @@
+.hero-header {
+  margin: 20px 20px 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: var(--hero-bg); /* сохранит тему */
+  border-bottom: 1px solid var(--card-border);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 15px 15px 0 0;
+}
+
+.header-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--logo);
+  cursor: pointer;
+}
+
+.hero-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.hero-nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.hero-nav a:hover {
+  color: var(--button-bg);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+.language-btn {
+  background-color: var(--secondary);
+  color: var(--text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--hero-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  width: 120px;
+  z-index: 9999;
+}
+
+.language-dropdown.open .language-menu {
+  display: block;
+}
+
+.language-menu div {
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.language-menu div:hover {
+  background-color: var(--button-bg);
+}
+
+.theme-toggle,
+.account-btn,
+.language-btn {
+  background-color: var(--secondary);
+  color: var(--text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle.dark {
+  background-color: var(--button-bg);
+  color: white;
+}
+
+.account-btn {
+  background-color: var(--button-bg);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.account-dropdown {
+  position: relative;
+}
+
+.account-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--hero-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  width: 180px;
+  z-index: 9999;
+}
+
+.account-dropdown.open .account-menu {
+  display: block;
+}
+
+.account-menu div {
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.account-menu div:hover {
+  background-color: var(--button-bg);
+}
+
+.login-btn {
+  background-color: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--faq-bg-hover);
+}
+
+.features-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.features-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  background-color: var(--hero-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  width: 200px;
+  z-index: 9999;
+  padding: 0.5rem;
+}
+
+.features-menu a {
+  font-size: 15px;
+}
+
+.features-menu li {
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.features-menu li:last-child {
+  border-bottom: none;
+}
+
+.features-menu li:hover {
+  background-color: var(--button-bg);
+  color: white;
+}
+
+
+.account-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.account-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--hero-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  width: 200px;
+  z-index: 9999;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.account-menu li {
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.account-menu li:last-child {
+  border-bottom: none;
+}
+
+.account-menu li:hover {
+  background-color: var(--button-bg);
+  color: white;
+}

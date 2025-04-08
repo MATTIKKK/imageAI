@@ -1,0 +1,226 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "faq": "FAQ",
+    "pricing": "Pricing",
+    "account": "My Account",
+    "login": "Login",
+    "ai-generator": "AI Generator",
+    "image-colorize": "Image Colorize",
+    "resize-image": "Resize Image",
+    "emotion-detection": "Emotion Detection",
+    "manage-account": "Manage Account",
+    "balance": "Balance",
+    "logout": "Log out"
+  },
+  "hero": {
+    "title": "Transform your\nimages with RenkAI",
+    "description": "Breathe life into black and white photos, generate unique AI art, resize images, and detect emotions on faces – all powered by cutting-edge artificial intelligence.",
+    "button": "Try It Free"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is RenkAI?",
+        "answer": "RenkAI is an AI-powered web application that offers advanced image processing services, including image generation, colorization, resizing, face and emotion detection, and more."
+      },
+      {
+        "question": "How does RenkAI work?",
+        "answer": "RenkAI allows users to upload images and apply AI-based enhancements using cutting-edge deep learning models. The system processes images through an intuitive interface, delivering high-quality results in seconds."
+      },
+      {
+        "question": "What AI features does RenkAI offer?",
+        "answer": "RenkAI provides a wide range of AI-powered image enhancement tools, including:\n* AI Image Generation – Generate images based on text prompts or existing images.\n* Black & White Image Colorization – Automatically restore color to old or grayscale photos.\n* Image Resizing & Enhancement – Improve image quality, upscale resolution, and optimize details.\n* Face & Emotion Detection – Identify faces and analyze emotions in images using AI."
+      },
+      {
+        "question": "How does the AI Image Generation feature work?",
+        "answer": "Our AI image generator uses advanced deep learning models to create images from text descriptions or enhance existing images based on user input."
+      },
+      {
+        "question": "What is Image Colorization, and how accurate is it?",
+        "answer": "Image Colorization is powered by DeOldify, an AI model trained on thousands of images to predict realistic colors for black-and-white photos. The accuracy depends on the image quality and the model’s training data."
+      },
+      {
+        "question": "How does Emotion & Face Detection work?",
+        "answer": "RenkAI uses DeepFace, a powerful AI model, to detect faces in images and analyze emotions such as happiness, sadness, anger, and surprise."
+      },
+      {
+        "question": "Can I process multiple images at once?",
+        "answer": "Yes, bulk processing is available for registered users. The number of images that can be processed simultaneously depends on the user’s subscription plan."
+      },
+      {
+        "question": "Will my processed images be used for AI training?",
+        "answer": "By default, RenkAI does not use user-uploaded images for AI training. Users can opt-in to contribute anonymized images to improve our models."
+      },
+      {
+        "question": "Is my personal information safe?",
+        "answer": "Yes, we prioritize security and privacy, using data encryption and secure authentication to protect user information."
+      },
+      {
+        "question": "How can I contact support?",
+        "answer": "You can reach our support team via email at email.com"
+      }
+    ]
+  },
+  "features": {
+    "cards": [
+      {
+        "title": "AI Prompt Image Generator",
+        "button": "Start Creating"
+      },
+      {
+        "title": "Black-white Image Colorization",
+        "button": "Try Now"
+      },
+      {
+        "title": "Resize & Modify Image",
+        "button": "Resize now"
+      },
+      {
+        "title": "Emotion Detection",
+        "button": "Analyze Now"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "plans": [
+      {
+        "title": "Free",
+        "price": "$0",
+        "billing": "month",
+        "features": [
+          "3 generations per day",
+          "Basic access to all features",
+          "Community support"
+        ],
+        "buttonText": "Get Started",
+        "buttonColor": "#cdd9f9"
+      },
+      {
+        "title": "Basic",
+        "price": "$7",
+        "billing": "month",
+        "features": [
+          "720 FLUX image generations",
+          "360 colorized photos",
+          "2 Face & Emotion recognition features",
+          "Priority email support"
+        ],
+        "buttonText": "Subscribe Now",
+        "buttonColor": "#8b3dff"
+      },
+      {
+        "title": "Pro",
+        "price": "$10",
+        "billing": "month",
+        "features": [
+          "Unlimited FLUX image generations",
+          "Unlimited colorized photos",
+          "4 Face & Emotion recognition features",
+          "24/7 priority support",
+          "API access"
+        ],
+        "buttonText": "Go Pro",
+        "buttonColor": "#5b3eff"
+      }
+    ]
+  },
+  "footer": {
+    "terms": "Terms of Service",
+    "cookie": "Cookie Policy",
+    "third": "3rd party Policy",
+    "copyright": "© Copyright 2025 - RenkAI"
+  },
+  "freeTrial": {
+    "title": "Let’s make things happen",
+    "description": "Generate unique images from text prompts using our advanced AI. Create artwork, concepts, or visualize your ideas instantly.",
+    "button": "Get your free trial"
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Login to continue colorizing your images",
+    "google": "Google",
+    "facebook": "Facebook",
+    "orEmail": "or continue with email",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgot": "Forgot password?",
+    "loginButton": "Login",
+    "noAccount": "Don’t have an account?",
+    "signup": "Sign up",
+    "error": "Invalid email or password"
+  },
+  "register": {
+    "title": "Create your account",
+    "subtitle": "Fill in the form below to get started",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "password": "Password",
+    "passwordHint": "Password must be at least 8 characters long",
+    "terms": "I agree to the Terms of Service and Privacy Policy",
+    "create": "Create Account",
+    "orContinue": "or continue with email",
+    "already": "Already have an account?",
+    "login": "Login",
+    "loading": "Registering..."
+  },
+  "colorization": {
+    "or": "Or",
+    "title": "Image Colorization",
+    "subtitle": "Transform your black & white photos into vibrant colored images with our AI-powered colorization tool.",
+    "uploadTitle": "Upload your image",
+    "dragDrop": "Drag and drop an image here\nor",
+    "browse": "Browse Files",
+    "button": "Colorize Image",
+    "howTitle": "How It Works",
+    "howSubtitle": "Our advanced AI analyzes your black and white photos to add realistic colors in just three simple steps.",
+    "step1": "Upload",
+    "step1desc": "Upload any black and white photo from your device.",
+    "step2": "Process",
+    "step2desc": "Our AI analyzes and applies natural colors to your image.",
+    "step3": "Download",
+    "step3desc": "Download your beautifully colorized photo in high resolution."
+  },
+  "aiGenerator": {
+    "title": "AI Image Prompt Generator",
+    "description": "Create stunning AI-generated images with perfectly crafted prompts. Simply describe what you want and get optimized prompts for your favorite AI Image Generation.",
+    "yourPrompt": "Your Prompt",
+    "optimizedResult": "Optimized Result",
+    "placeholderInput": "Describe the image you want to generate in detail...",
+    "placeholderOutput": "Your optimized AI prompt will appear here...",
+    "generate": "Generate Prompt",
+    "clear": "Clear",
+    "download": "Download",
+    "history": "History",
+    "popular": "Popular AI Images"
+  },
+  "emotionDetection": {
+    "title": "Face & Emotion Recognition",
+    "description": "Advanced facial recognition directly in your browser",
+    "getStarted": "Get started",
+    "uploadArea": {
+      "dragAndDrop": "Drag & Drop your image here or click to browse files",
+      "uploadButton": "Upload an Image"
+    },
+    "results": {
+      "age": "Age",
+      "gender": "Gender",
+      "emotion": "Emotion",
+      "emotionScores": {
+        "angry": "Angry",
+        "disgust": "Disgust",
+        "fear": "Fear",
+        "happy": "Happy",
+        "sad": "Sad",
+        "surprise": "Surprise",
+        "neutral": "Neutral"
+      }
+    }
+  }
+}

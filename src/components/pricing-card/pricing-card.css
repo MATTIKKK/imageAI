@@ -1,0 +1,71 @@
+.pricing-card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 10px 15px var(--shadow);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.plan-price {
+  font-size: 3rem;
+  color: var(--button-bg);
+}
+
+.price {
+  font-weight: bold;
+}
+
+.billing {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+}
+
+.checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  margin-right: 0.5rem;
+  width: 20px;
+}
+
+.pricing-button {
+  width: 100%;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--button-bg);
+  transition: background-color 0.3s ease;
+}
+
+.pricing-button:hover {
+  background-color: var(--button-hover);
+}

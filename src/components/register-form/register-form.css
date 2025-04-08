@@ -1,0 +1,241 @@
+.register-wrapper {
+  min-height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 30px;
+}
+
+.register-box {
+  background-color: var(--card-bg);
+  color: var(--text);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px var(--shadow);
+  padding: 2rem 2.5rem;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--card-border);
+  background-color: var(--faq-bg);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  transition: border-color 0.2s;
+}   
+
+.register-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--button-bg);
+  margin-bottom: 10px;
+}
+
+.register-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.register-wrapper label {
+    margin-left: 10px;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.auth-button {
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text);
+  transition: background-color 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: var(--faq-bg);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 3px;
+  background-color: var(--card-border);
+}
+
+.register-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--card-border);
+  background-color: var(--faq-bg);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  transition: border-color 0.2s;
+}
+
+.password-hint {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: var(--text-muted);
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.input-wrapper:focus-within {
+  border-color: var(--button-bg);
+}
+
+.register-button {
+  background-color: var(--button-bg);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.register-button:hover {
+  background-color: var(--button-hover);
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.checkbox-group input {
+  margin-top: 3px;
+}
+
+.checkbox-group label {
+    margin-left: 5px;
+}
+
+.social-auth {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-auth div {
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  padding: 5px 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.social-auth div:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+.social-auth div img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.signup-text {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+  color: var(--button-bg);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fdecea;
+  border: 1px solid #f5c2c7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.register-button.disabled,
+.register-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

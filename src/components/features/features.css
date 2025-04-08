@@ -1,0 +1,10 @@
+.features-grid {
+  background-color: var(--bg);
+  padding: 3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
