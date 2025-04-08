@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 9999;
-  background-color: var(--hero-bg); /* сохранит тему */
+  background-color: var(--hero-bg); 
   border-bottom: 1px solid var(--card-border);
   padding: 1.5rem 2rem;
   display: flex;
@@ -27,7 +27,8 @@
   width: 40%;
 }
 
-.hero-nav a {
+.hero-nav a,
+.hero-nav div {
   text-decoration: none;
   color: var(--text-light);
   font-size: 1.2rem;
@@ -182,6 +183,8 @@
 
 .features-menu a {
   font-size: 15px;
+  color: var(--text);
+
 }
 
 .features-menu li {

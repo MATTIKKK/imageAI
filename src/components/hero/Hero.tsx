@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   const t = rawT as (key: string, options?: any) => any;
 
   const handleClick = () => {
-    navigate('/login');
+    navigate('/#pricing');
   };
 
   return (

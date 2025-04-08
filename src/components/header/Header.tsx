@@ -13,8 +13,8 @@ const Header = () => {
   const [showLangMenu, setShowLangMenu] = useState(false);
   const [currentLang, setCurrentLang] = useState(i18n.language);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
-  const [showFeaturesMenu, setShowFeaturesMenu] = useState(false); // Features dropdown state
-  const [showAccountMenu, setShowAccountMenu] = useState(false); // My Account dropdown state
+  const [showFeaturesMenu, setShowFeaturesMenu] = useState(false);
+  const [showAccountMenu, setShowAccountMenu] = useState(false); 
   const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleLangMenu = () => {
@@ -39,11 +39,11 @@ const Header = () => {
   };
 
   const toggleFeaturesMenu = () => {
-    setShowFeaturesMenu((prev) => !prev); // Toggle features dropdown
+    setShowFeaturesMenu((prev) => !prev); 
   };
 
   const toggleAccountMenu = () => {
-    setShowAccountMenu((prev) => !prev); // Toggle account dropdown
+    setShowAccountMenu((prev) => !prev);
   };
 
   useEffect(() => {
@@ -67,10 +67,10 @@ const Header = () => {
           {t('nav.features')}
           {showFeaturesMenu && (
             <ul className="features-menu">
-              <li>{t('nav.ai-generator')}</li>
-              <li>{t('nav.image-colorize')}</li>
-              <li>{t('nav.resize-image')}</li>
-              <li>{t('nav.emotion-detection')}</li>
+              <li onClick={() => navigate('/ai-generator')}>{t('nav.ai-generator')}</li>
+              <li onClick={() => navigate('/image-colorization')}>{t('nav.image-colorize')}</li>
+              <li onClick={() => navigate('/resize')}>{t('nav.resize-image')}</li>
+              <li onClick={() => navigate('/emotion')}>{t('nav.emotion-detection')}</li>
             </ul>
           )}
         </div>

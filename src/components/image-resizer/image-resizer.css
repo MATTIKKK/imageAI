@@ -6,6 +6,20 @@
   max-width: 80%;
 }
 
+.image-preview-container {
+  position: relative;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+}
+
+.image-preview-container img {
+  transition: transform 0.2s;
+}
+
 .resize-title {
   font-size: 2.5rem;
   font-weight: 700;

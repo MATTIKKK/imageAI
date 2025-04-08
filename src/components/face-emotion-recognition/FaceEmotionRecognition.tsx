@@ -37,40 +37,33 @@ const FaceEmotionRecognition = () => {
       setLoading(true);
       setError('');
 
-      const formData = new FormData();
-      formData.append('file', file);
+      setTimeout(() => {
+        const randomAge = Math.floor(Math.random() * (70 - 20 + 1)) + 20;
+        setAge(randomAge.toString());
 
-      try {
-        const response = await fetch(
-          'http://localhost:8002/emotion_detection/',
-          {
-            method: 'POST',
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem("access_token")}`,
-              'Content-Type': 'application/json',
-            },
-            body: formData,
-          }
-        );
+        const randomGender = Math.random() > 0.5 ? 'Male' : 'Female';
+        setGender(randomGender);
 
-        if (!response.ok) {
-          throw new Error('Failed to fetch analysis');
-        }
+        setDominantEmotion('happy'); // Можно выбрать любой доминантный эмоцию
+        setEmotionScores({
+          angry: Math.random() * 100,
+          disgust: Math.random() * 100,
+          fear: Math.random() * 100,
+          happy: Math.random() * 100,
+          sad: Math.random() * 100,
+          surprise: Math.random() * 100,
+          neutral: Math.random() * 100,
+        });
 
-        const data = await response.json();
-
-        console.log(data);
-
-        const analysis = data.analysis[0];
-        setAge(analysis.age.toString());
-        setGender(analysis.dominant_gender);
-        setDominantEmotion(analysis.dominant_emotion);
-        setEmotionScores(analysis.emotion);
-      } catch (err) {
-        setError('Error processing the image');
-      } finally {
         setLoading(false);
-      }
+      }, 1000); // Эмулируем задержку загрузки
+    }
+  };
+
+  const scrollToEmotionBlock = () => {
+    const element = document.getElementById('emotion-block');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -117,30 +110,36 @@ const FaceEmotionRecognition = () => {
               </div>
             </div>
           </div>
-          <button className="emotion-button">Get started</button>
+          <button className="emotion-button" onClick={scrollToEmotionBlock}>
+            Get started
+          </button>
         </div>
         <div className="">
           <img src={photo} alt="" />
         </div>
       </div>
 
-      <div className="emotion-card">
+      <div className="emotion-card" id="emotion-block">
         <div className="">
           <h2>AI Face Analysis</h2>
           <div className="left center">
-            <div className="upload-area">
-              <p>Drag & Drop your image here or click to browse files</p>
-              <input
-                type="file"
-                accept="image/*"
-                style={{ display: 'none' }}
-                onChange={handleImageUpload}
-                id="fileInput"
-              />
-              <label htmlFor="fileInput" className="upload-btn">
-                Upload an Image
-              </label>
-            </div>
+            {image ? (
+              <img src={image} alt="Uploaded" />
+            ) : (
+              <div className="upload-area">
+                <p>Drag & Drop your image here or click to browse files</p>
+                <input
+                  type="file"
+                  accept="image/*"
+                  style={{ display: 'none' }}
+                  onChange={handleImageUpload}
+                  id="fileInput"
+                />
+                <label htmlFor="fileInput" className="upload-btn">
+                  Upload an Image
+                </label>
+              </div>
+            )}
           </div>
         </div>
 

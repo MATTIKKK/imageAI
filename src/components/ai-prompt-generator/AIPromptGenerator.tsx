@@ -10,7 +10,6 @@ import {
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-import img1 from '../../static/img/1.png';
 import img2 from '../../static/img/2.png';
 import img3 from '../../static/img/3.png';
 import img4 from '../../static/img/4.png';
@@ -28,7 +27,6 @@ import img15 from '../../static/img/15.png';
 import img16 from '../../static/img/16.png';
 
 const images = [
-  img1,
   img2,
   img3,
   img4,

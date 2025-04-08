@@ -61,10 +61,6 @@
   align-items: center;
 }
 
-.upload-box img {
-    width: 50px;
-}
-
 .upload-area {
   display: flex;
   flex-direction: column;
@@ -151,6 +147,10 @@
   color: var(--text-muted);
   max-width: 700px;
   margin: 0 auto 2.5rem;
+}
+
+.upload-icon {
+  width: 50px;
 }
 
 .steps-grid {
