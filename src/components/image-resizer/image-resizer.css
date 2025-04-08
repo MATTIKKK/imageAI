@@ -8,16 +8,17 @@
 
 .image-preview-container {
   position: relative;
-  overflow: hidden; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   width: 500px;
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-preview-container img {
   transition: transform 0.2s;
+  max-height: 100%;
 }
 
 .resize-title {
@@ -45,7 +46,7 @@
   justify-content: center;
   margin-top: 20px;
   width: 100%;
-  max-width: 500px; 
+  max-width: 500px;
   height: 400px;
 }
 
@@ -212,7 +213,8 @@ h3 {
   color: #fff;
 }
 
-.rotate-btn, .flip-btn {
+.rotate-btn,
+.flip-btn {
   font-weight: 500;
 }
 
@@ -245,30 +247,30 @@ button svg {
 /* Media Query Adjustments for Responsiveness */
 @media (max-width: 768px) {
   .image-resizer-container {
-    width: 90%; 
+    width: 90%;
   }
-  
+
   .resize-card {
     flex-direction: column;
     padding: 1.5rem;
   }
-  
+
   .resize-inputs {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .resize-inputs input {
     width: 100%;
   }
-  
+
   .transformations button {
     width: 100%;
     padding: 12px;
   }
-  
+
   .image-upload {
-    width: 100%; 
+    width: 100%;
     max-width: none;
     height: 180px;
   }
