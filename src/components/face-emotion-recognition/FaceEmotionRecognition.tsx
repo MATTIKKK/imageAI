@@ -77,7 +77,7 @@ const FaceEmotionRecognition = () => {
   return (
     <div className="emotion-wrapper">
       <h2 className="emotion-title">{t('aiGenerator.title')}</h2>
-      <p className="generator-description">{t('aiGenerator.description')}</p>
+      <p className="emotion-description">{t('aiGenerator.description')}</p>
 
       <div className="emotion-card first">
         <div className="ai-face-analysis-container column">
@@ -162,7 +162,7 @@ const FaceEmotionRecognition = () => {
               </div>
 
               <div className="emotion-section">
-                <h3 className="emotion-title">Emotion</h3>
+                <h3 className="emotion-small-title">Emotion</h3>
                 <p className="emotion-label">Emotions:</p>
                 <div className="emotion-item">
                   <span className="emotion-label">Angry</span>
