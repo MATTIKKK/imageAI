@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './profile.css';
 import Pricing from '../pricing/Pricing';
+import img1 from '../../static/img/1.1.jpg';
+import img2 from '../../static/img/1.2.jpg';
+import img3 from '../../static/img/1.3.jpg';
+import img4 from '../../static/img/1.4.jpg';
+import img5 from '../../static/img/2.1.jpg';
+import img6 from '../../static/img/2.2.jpg';
+import img7 from '../../static/img/2.3.jpg';
+import img8 from '../../static/img/2.4.jpg';
 
 const Profile = () => {
   const [firstName, setFirstName] = useState('');
@@ -12,14 +20,13 @@ const Profile = () => {
 
   const [points, setPoints] = useState(750); // Пример баллов
   const [history, setHistory] = useState({
-    aiImagePrompt: 5,
-    imageColorization: 3,
-    resizeImages: 7,
-    faceEmotionRecognition: 2,
+    aiImagePrompt: [img1, img5],
+    imageColorization: [img2, img6],
+    resizeImages: [img3, img7],
+    faceEmotionRecognition: [img4, img8],
   });
 
   const handleRedeemPoints = () => {
-    // Логика для использования баллов
     alert('Points redeemed!');
   };
 
@@ -28,15 +35,9 @@ const Profile = () => {
     window.location.href = '/';
   };
 
-  // Обновленная функция для обработки подписки
   const handleSubscribe = (plan: string) => {
-    // Устанавливаем выбранный план
     setActivePlan(plan);
-
-    // Показываем зелёный алерт
     setShowSuccessAlert(true);
-
-    // Скрываем алерт через 3 секунды
     setTimeout(() => {
       setShowSuccessAlert(false);
     }, 3000);
@@ -239,7 +240,6 @@ const Profile = () => {
               <h3>History</h3>
               <div className="history-categories">
                 {Object.keys(history).map((category) => {
-                  // Приводим category к типу keyof history
                   const categoryKey = category as keyof typeof history;
                   return (
                     <div key={category} className="history-category">
@@ -247,8 +247,22 @@ const Profile = () => {
                         <p>{category.replace(/([A-Z])/g, ' $1')}</p>
                       </div>
                       <div className="history-images">
-                        {[...Array(history[categoryKey])].map((_, index) => (
-                          <div key={index} className="history-image"></div>
+                        {history[categoryKey].map((image, index) => (
+                          <div
+                            key={index}
+                            className="history-image"
+                            style={{
+                              backgroundImage: `url(${image})`,
+                              backgroundSize: 'contain',
+                              backgroundPosition: 'center',
+                              backgroundRepeat: 'no-repeat',
+                              backgroundColor: 'transparent',
+                              width: '100px',
+                              height: '100px',
+                              margin: '5px',
+                              borderRadius: '8px',
+                            }}
+                          ></div>
                         ))}
                       </div>
                     </div>
